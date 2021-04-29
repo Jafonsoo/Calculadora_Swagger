@@ -1,0 +1,147 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "title": "Calculadora",
+      "description": "API Calculadora usando o swagger",
+      "version": "1.0"
+    },
+    "host": "localhost:8001",
+    "basePath": "/",
+    "schemes": [
+      "http"
+    ],
+    "paths": {
+      "/soma/{a}&{b}": {
+        "get": {
+          "description": "Defina dois números para somar.",
+          "operationId": "SOMA",
+          "parameters": [
+            {
+              "name": "a",
+              "in": "path",
+              "type": "integer",
+              "description": "Primeiro número. Valor por omissão <code>10</code>.",
+              "required": true,
+              "default": "10",
+              "enum": [
+                "10",
+                "20",
+                "30"
+              ]
+            },
+            {
+              "name": "b",
+              "in": "path",
+              "type": "integer",
+              "description": "Segundo número. Valor por omissão <code>15>/code>.",
+              "required": true,
+              "default": "15",
+              "enum": [
+                "15"
+              ]
+            }
+          ],
+          "responses": {}
+        }
+      },
+      "/mul/{a}&{b}": {
+        "get": {
+          "description": "Defina dois números para somar.",
+          "operationId": "MUL",
+          "parameters": [
+            {
+              "name": "a",
+              "in": "path",
+              "type": "integer",
+              "description": "Primeiro número. Valor por omissão <code>10</code>.",
+              "required": true,
+              "default": "10",
+              "enum": [
+                "10",
+                "20",
+                "30"
+              ]
+            },
+            {
+              "name": "b",
+              "in": "path",
+              "type": "integer",
+              "description": "Segundo número. Valor por omissão <code>15>/code>.",
+              "required": true,
+              "default": "15",
+              "enum": [
+                "15"
+              ]
+            }
+          ],
+          "responses": {}
+        }
+      },
+      "/div/{a}&{b}": {
+        "get": {
+          "description": "Defina dois números para somar.",
+          "operationId": "DIV",
+          "parameters": [
+            {
+              "name": "a",
+              "in": "path",
+              "type": "integer",
+              "description": "Primeiro número. Valor por omissão <code>10</code>.",
+              "required": true,
+              "default": "10",
+              "enum": [
+                "10",
+                "20",
+                "30"
+              ]
+            },
+            {
+              "name": "b",
+              "in": "path",
+              "type": "integer",
+              "description": "Segundo número. Valor por omissão <code>15>/code>.",
+              "required": true,
+              "default": "15",
+              "enum": [
+                "15"
+              ]
+            }
+          ],
+          "responses": {}
+        }
+      },
+      "/sub/{a}&{b}": {
+        "get": {
+          "description": "Defina dois números para somar.",
+          "operationId": "SUB",
+          "parameters": [
+            {
+              "name": "a",
+              "in": "path",
+              "type": "integer",
+              "description": "Primeiro número. Valor por omissão <code>10</code>.",
+              "required": true,
+              "default": "10",
+              "enum": [
+                "10",
+                "20",
+                "30"
+              ]
+            },
+            {
+              "name": "b",
+              "in": "path",
+              "type": "integer",
+              "description": "Segundo número. Valor por omissão <code>15>/code>.",
+              "required": true,
+              "default": "15",
+              "enum": [
+                "15"
+              ]
+            }
+          ],
+          "responses": {}
+        }
+      }
+    }
+  }
